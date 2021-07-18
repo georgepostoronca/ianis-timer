@@ -97,14 +97,6 @@ export default {
         }, 1000);
       }
     },
-    loadingLineGen(num) {
-      try {
-        this.$refs.loadingLine.style.width =
-          100 - (this.time * 100) / (this.selectedMin * 60);
-      } catch (e) {
-        console.log(e);
-      }
-    },
     resetTimer(type) {
       if (type) {
         let result = confirm("Reset Timer?");
